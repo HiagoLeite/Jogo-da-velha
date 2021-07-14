@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(50deg,rgba(205,45,205,1),rgba(206,204,45,1),)no-repeat;
+}
+/* Incio */
+#cabecalhoJogo{
+    text-align: center;
+    width:50vw;
+    margin: 20px auto;
+}
+#contCabecalho{
+    margin-top: 50px;
+}
+.btn{
+    margin: 10px 5px;
+    font-size:14px ;
+    border-radius: 20px;
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border:2px solid black;
+}
+
+/* JOGO */
+.hiden{
+    display: none;
+}
+main{
+    padding-top:13%;
+    height:100vh;
+    width: 100vw;
+    display: inline-block;
+}
+#container{
+    width:  320px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    border: 3px solid;
+    box-shadow: 10px 15px 5px gray;
+}
+.campo{ 
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+}
+#campo1,#campo2,#campo3{
+    border-top:none;
+} 
+#campo1,#campo4,#campo7{
+    border-left:none;
+}
+#campo3,#campo6,#campo9{
+    border-right:none;
+}
+#campo7,#campo8,#campo9{
+    border-bottom:none;
+}
+#contPlayer1,#contPlayer2{
+    width: 25%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+#contPlayer1{
+    float:left;
+    border: 2px solid;
+    box-shadow: 5px 5px 10px blue;
+}
+#contPlayer2{
+    float:right;
+    border:2px solid;
+    box-shadow: 5px 5px 10px red;
+}
+
+#simboloO{
+    width: 25px;
+    height: 25px;
+    border:3px solid red;
+    border-radius: 50%;
+    margin: auto;
+}
+#simboloX{
+    font-size: 25px;
+    color:blue; 
+    text-align: center;
+}
+#opcoes{
+    width: 50px;
+    margin: 2px auto;
+}

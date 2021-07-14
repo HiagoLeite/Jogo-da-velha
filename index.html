@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <script src='scripts.js' defer></script>
+        
+        <title>Jogo da velha 1.5</title>
+    </head>
+
+    <body>
+        
+        <header id="cabecalhoJogo">
+            <h1>Bem vindo ao Jogo da velha!</h1>
+            <div id="contCabecalho">
+                <label>Nome:</label>
+                <input type="text" id="nomeJogador" name="nomeJogador" value='' placeholder="Insira um apelido no jogo" >
+                <br/>
+                <button id="single" class="btn">Single player</button>
+                <button id="mult" class="btn">Multi player</button>
+            </div>
+        </header>
+
+        <main class="hiden">
+            <div id="contPlayer1">
+                <div id="simboloX">X</div>
+                <br/>
+                <label id="nick1"></label>
+                <br/>
+                <p>Placar</p>
+                <p id="pontoWp1"></p>
+                <p id="pontoLp1"></p>
+            </div>
+            <div id="contPlayer2">
+                <div id="simboloO"> </div>
+                <br/>
+                <label id="nick2"></label>
+                <br/>
+                <p>Placar</p>
+                <p id="pontoWp2"></p>
+                <p id="pontoLp2"></p>
+            </div>
+            <div id="container">
+                <div class="campo" id="campo1"></div> 
+                <div class="campo" id="campo2"></div> 
+                <div class="campo" id="campo3"></div>
+                <div class="campo" id="campo4"></div> 
+                <div class="campo" id="campo5"></div> 
+                <div class="campo" id="campo6"></div>
+                <div class="campo" id="campo7"></div> 
+                <div class="campo" id="campo8"></div> 
+                <div class="campo" id="campo9"></div>
+            </div>
+            <div id="opcoes">
+                <button class="btn" onclick="sair();">Sair!</button>
+            </div>
+        </main>
+    </body>
+</html>
